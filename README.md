@@ -19,6 +19,8 @@ It's mostly a experiment and me trying to kill time while i'm looking for a job.
 
 **If you need production level testing, please use Jest, Mocha, Tape or your favorite battle tested test runner.**
 
+![screnshot ](screenshot.png)
+
 ## Installation (not available right now)
 
 ## Usage/Examples
