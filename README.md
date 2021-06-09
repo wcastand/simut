@@ -4,8 +4,11 @@ To make super simple unit test on typescript.
 
 ## Appendix
 
-The idea was to make it as simple as possible to make some unit test in typescript or javascript. tools like jest/tape are really complete and offer a lot but always require some setup (ts-node, babel,...). I wanted something super easy to start with.
-I usually use `assert` from node to do the tests.
+The idea was to make it as simple as possible to make some unit test in typescript or javascript. Was more thinking of using this for simple things like experiments where you need basic test to go faster or iterview tests, exercises like advent of code, etc
+
+Tools like jest/tape are really complete and offer a lot but always require some setup (ts-node, babel, ...). I wanted something super easy to start with.
+
+I usually use `assert` from node to do the tests but any testing library that throw on error should work.
 
 To run the test i simple use `esbuild-runner` [repo](https://github.com/folke/esbuild-runner)
 
