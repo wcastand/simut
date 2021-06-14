@@ -33,6 +33,9 @@
 		"fp-ts": "^2.10.5"
 	},
 	"files": [
+		"README.md",
+		"screenshot.png",
+		"tsconfig.json",
 		"dist",
 		"src",
 		"tests"
