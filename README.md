@@ -1,4 +1,4 @@
-# Simple-unit-test (sut)
+# Simple-unit-test (simut)
 
 To make super simple unit test on typescript.
 
@@ -24,7 +24,17 @@ It's mostly a experiment and me trying to kill time while i'm looking for a job.
 
 ![screnshot ](screenshot.png)
 
-## Installation (not available right now)
+## Installation
+
+```bash
+yarn add simut
+```
+
+#### Peer dependencies
+
+```bash
+yarn add -D esbuild esbuild-runner
+```
 
 ## Usage/Examples
 
