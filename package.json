@@ -1,13 +1,40 @@
 {
-	"name": "sut",
-	"private": true,
-	"version": "1.0.0",
-	"main": "index.js",
+	"name": "simut",
+	"version": "0.0.3",
 	"license": "MIT",
-	"workspaces": [
-		"packages/*"
-	],
+	"source": "src/index.ts",
+	"main": "dist/simut.js",
+	"module": "dist/simut.module.js",
+	"umd:main": "./dist/simut.umd.js",
+	"unpkg": "dist/simut.umd.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "microbundle --tsconfig ./tsconfig.json --output dist --sourcemap false --define process.env.NODE_ENV=production src/index.ts",
+		"build:dev": "microbundle --tsconfig ./tsconfig.json --output dist --sourcemap true --define process.env.NODE_ENV=development src/index.ts",
+		"dev": "microbundle watch",
+		"test": "esr tests/index.ts"
+	},
+	"peerDependencies": {
+		"esbuild": "^0.12.*",
+		"esbuild-runner": "^2.2.*"
+	},
+	"devDependencies": {
+		"@types/node": "^15.12.1",
+		"@types/node-fetch": "^2.5.10",
+		"esbuild": "^0.12.8",
+		"esbuild-runner": "^2.2.0",
+		"microbundle": "^0.13.2",
+		"node-fetch": "^2.6.1",
+		"prettier": "^2.3.1",
+		"typescript": "^4.3.2"
+	},
 	"dependencies": {
-		"prettier": "^2.3.1"
-	}
+		"chalk": "^4.1.1",
+		"fp-ts": "^2.10.5"
+	},
+	"files": [
+		"dist",
+		"src",
+		"tests"
+	]
 }
