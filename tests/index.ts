@@ -1,8 +1,8 @@
 import fetch from 'node-fetch'
 import { strict as assert } from 'assert'
 
-import { test, run, group } from '../src'
-import { lonelyNumber } from '../src/example'
+import { test, run, group } from '../src/'
+import { lonelyNumber } from './example'
 
 group('Simple')
 
