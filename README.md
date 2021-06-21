@@ -96,6 +96,21 @@ test('test name', async () => 'assertion returning a promise or throwing or erro
 
 Create a new test
 
+#### only
+
+```typescript
+only('test name', async () => 'assertion returning a promise or throwing or error')
+```
+
+| Parameter | Type       | Description                                                           |
+| :-------- | :--------- | :-------------------------------------------------------------------- |
+| `title`   | `string`   | **Required**. Description of the test                                 |
+| `fn`      | `function` | **Required**. function throwing of test error and returning a promise |
+
+Create a new test and will filter all the other tests except the one using `only`.
+
+useful if you want to focus on one test. Remember to switch back to `test` once you're done to run all of them again.
+
 #### group
 
 ```typescript
