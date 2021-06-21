@@ -1,3 +1,8 @@
+![npm](https://img.shields.io/npm/dt/simut?style=flat-square)
+![npm](https://img.shields.io/npm/v/simut?style=flat-square)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/simut?style=flat-square)
+![NPM](https://img.shields.io/npm/l/simut?style=flat-square)
+
 # Simple-unit-test (simut)
 
 To make super simple unit test on typescript.
@@ -15,7 +20,6 @@ To run the test i simple use `esbuild-runner` [repo](https://github.com/folke/es
 ```bash
 esr tests/index.ts
 ```
-
 
 It's a one file test lib.
 It's mostly a experiment and me trying to kill time while i'm looking for a job.
