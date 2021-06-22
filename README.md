@@ -46,8 +46,8 @@ yarn add -D esbuild esbuild-runner
 ```typescript
 import fetch from 'node-fetch'
 import { strict as assert } from 'assert'
+import { test, run, group } from 'simut'
 
-import { test, run, group } from '../src'
 import { lonelyNumber } from '../src/example'
 
 group('Simple')
